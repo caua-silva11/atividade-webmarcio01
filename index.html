@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Resumo CSS</title>
+</head>
+<body>
+  <header>
+    <h1>Cascata, Especificidade e Combinadores</h1>
+    <nav>
+      <ul>
+        <li><a href="#cascata">Cascata</a></li>
+        <li><a href="#especificidade">Especificidade</a></li>
+        <li><a href="#combinacao">Seletores</a></li>
+        <li><a href="#pseudo">Pseudo-classes</a></li>
+        <li><a href="#display">Display</a></li>
+        <li><a href="#boxmodel">Box Model</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="cascata">
+      <h2>Regra da Cascata</h2>
+      <p>O CSS funciona em cascata, ou seja quando há conflito, a última regra é a que vale.</p>
+    </section>
+
+    <section id="especificidade">
+      <h2>Especificidade</h2>
+      <p>A ordem de força dos seletores é:</p>
+      <ul>
+        <li>ID (#id) é o mais forte</li>
+        <li>Classe (.classe) é médio</li>
+        <li>Tag (div, h1, p) é o mais fraco</li>
+      </ul>
+    </section>
+
+    <section id="combinacao">
+      <h2>Combinação de Seletores</h2>
+      <p>.primeiro h1 - seleciona h1 dentro de .primeiro</p>
+      <p>.primeira > h1 - seleciona h1 filho direto de .primeira</p>
+      <p>.primeira h1 + h1 - seleciona o h1 logo após outro h1</p>
+    </section>
+
+    <section id="pseudo">
+      <h2>Pseudo-classes</h2>
+      <ul>
+        <li>:first-child - primeiro filho</li>
+        <li>:last-child - último filho</li>
+        <li>:nth-child(n) - filho na posição n</li>
+        <li>:nth-of-type(n) - filho de um tipo específico</li>
+      </ul>
+    </section>
+
+    <section id="display">
+      <h2>Display Inline e Block</h2>
+      <p>Display block ocupa toda a linha. Exemplos: div, p, h1.</p>
+      <p>Display inline ocupa só o espaço do conteúdo. Exemplos: span, a, strong.</p>
+    </section>
+
+    <section id="boxmodel">
+      <h2>Box Model</h2>
+      <p>O box model tem margin, padding e border.</p>
+      <p>Shorthand:</p>
+      <ul>
+        <li>1 valor: margin: 10px</li>
+        <li>2 valores: margin: 10px 20px</li>
+        <li>3 valores: margin: 10px 20px 30px</li>
+        <li>4 valores: margin: 10px 20px 30px 40px</li>
+      </ul>
+      <p>Com box-sizing: border-box a largura já tem padding e border.</p>
+    </section>
+  </main>
+</body>
+</html>
